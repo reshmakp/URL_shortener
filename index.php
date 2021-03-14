@@ -15,7 +15,7 @@ die("Connection failed: " . $conn->connect_error);
 } 
 $slug=GetShortUrl($url);
 $conn->close();
-echo $base_url.$slug;
+echo $_GET['url'].'/'.$slug;
 } 
 else 
 {
